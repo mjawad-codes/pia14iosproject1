@@ -36,19 +36,27 @@ struct LayoutView: View {
             }
             
             VStack {
+                HStack {
+                    
+                    
+                }
+                    
+                .frame(maxWidth: 100, maxHeight: 100)
+                .background(Color.blue)
                 
             }
+                
             .frame(maxWidth: .infinity, maxHeight: 150)
             .background(Color.green)
+            
+            
             Spacer()
-            
-
-            
             
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.cyan)
         
+
         
     }
 }
