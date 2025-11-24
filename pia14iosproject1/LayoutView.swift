@@ -10,35 +10,49 @@ import SwiftUI
 struct LayoutView: View {
     var body: some View {
         
-        HStack {
-            
+        VStack {
             HStack {
                 
+                VStack {
+                    
+                    
+                    Text("One")
+                        .font(Font.largeTitle)
+                }
+                .frame(width: 200, height: 150)
+                .background(Color.red)
                 
-                Text("One")
-                    .font(Font.largeTitle)
+                Spacer()
+                
+                VStack {
+                    
+                    Text("Two")
+                        .font(Font.largeTitle)
+                }
+                .frame(width: 200, height: 150)
+                .background(Color.yellow)
+                
+                
             }
-            .frame(width: 150, height: 150)
-            .background(Color.red)
             
+            VStack {
+                
+            }
+            .frame(maxWidth: .infinity, maxHeight: 150)
+            .background(Color.green)
             Spacer()
             
-            HStack {
-                
-                Text("Two")
-                    .font(Font.largeTitle)
-            }
-            .frame(width: 150, height: 150)
-            .background(Color.yellow)
+
+            
             
         }
-        
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.cyan)
-    
+        
         
     }
 }
+
 
 
 #Preview {
