@@ -22,7 +22,6 @@ struct LayoutView: View {
                 .frame(width: 200, height: 150)
                 .background(Color.red)
                 
-                Spacer()
                 
                 VStack {
                     
@@ -34,7 +33,7 @@ struct LayoutView: View {
                 
                 
             }
-            
+
             VStack {
                 HStack {
                     
@@ -49,18 +48,33 @@ struct LayoutView: View {
             .frame(maxWidth: .infinity, maxHeight: 150)
             .background(Color.green)
             
+            HStack {
+                
+                
+            }
+                
+            .frame(maxWidth: 100, maxHeight: 100)
+            .background(Color.black)
+            .padding()
             
+            HStack {
+                
+                
+            }
+                
+            .frame(maxWidth: 100, maxHeight: 100)
+            .background(Color.black)
             Spacer()
+            
             
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.cyan)
-        
+
 
         
     }
 }
-
 
 
 #Preview {
