@@ -64,6 +64,12 @@ struct LayoutView: View {
                 
             .frame(maxWidth: 100, maxHeight: 100)
             .background(Color.black)
+            
+            HStack {
+                
+                Text("THREE")
+            }
+            .font(Font.largeTitle)
             Spacer()
             
             
